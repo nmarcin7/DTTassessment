@@ -7,3 +7,4 @@
 ![3](https://github.com/nmarcin7/DTTassessment/assets/83602541/845e3c14-1278-4ef6-883c-bbfc64a1453f)
 ![4](https://github.com/nmarcin7/DTTassessment/assets/83602541/1d75b5f3-3a86-4c5a-a073-47ad1cbbb69e)
 ![5](https://github.com/nmarcin7/DTTassessment/assets/83602541/4438828a-1a6e-479c-b49a-dde14f7fe8fb)
+![6](https://github.com/nmarcin7/DTTassessment/assets/83602541/0e9da8d8-a3b6-4755-adf9-d25c71322c40)

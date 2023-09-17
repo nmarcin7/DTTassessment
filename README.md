@@ -20,7 +20,7 @@ To add a house to your favorites list, click on it and hold for a moment. After 
 To remove a house from your wishlist, also click on it and hold. A dialog box will appear with an option to confirm the removal. This house will be deleted from your favorites list.
 
 <h1>Searching for a house</h1>
-To find a specific property, open the search option. You can do this through the magnifying glass icon or by swiping from left to right in the navigation menu. Then, type the name of the city or postal code you're interested in. The app will display available results matching your query.
+To find a specific property, open the search option, then, type the name of the city or postal code you're interested in. The app will display available results matching your query.
 
 <h1>Switching to dark mode</h1>
 If you prefer a dark theme, you can enable it in the side menu (Drawer). Open the menu by swiping from the left side of the screen and find the "Settings" option. There, you can switch between light and dark mode.

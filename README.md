@@ -10,18 +10,18 @@
 <h1>Welcome to the DTT view houses app!</h1>
 This  app makes it easy to browse available houses and add them to your favorites list. Here are a few tips on how to use the app:
 
-<h1>Viewing House Details</h1>
+<h1>Viewing house details</h1>
 To view the details of a specific house, simply click on its photo in the list of available houses. The app will take you to a screen with comprehensive information about the selected house.
 
-<h1>Adding a House to Favorites</h1>
+<h1>Adding a house to favorites</h1>
 To add a house to your favorites list, click on it and hold for a moment. After a while, a dialog box will appear to confirm the addition to your favorites. Now you can easily keep track of this house.
 
-<h1>Removing a House from Your Wishlist</h1>
+<h1>Removing a house from your wishlist</h1>
 To remove a house from your wishlist, also click on it and hold. A dialog box will appear with an option to confirm the removal. This house will be deleted from your favorites list.
 
-<h1>Searching for a House</h1>
+<h1>Searching for a house</h1>
 To find a specific property, open the search option. You can do this through the magnifying glass icon or by swiping from left to right in the navigation menu. Then, type the name of the city or postal code you're interested in. The app will display available results matching your query.
 
-<h1>Switching to Dark Mode</h1>
+<h1>Switching to dark mode</h1>
 If you prefer a dark theme, you can enable it in the side menu (Drawer). Open the menu by swiping from the left side of the screen and find the "Settings" option. There, you can switch between light and dark mode.
 That's it!

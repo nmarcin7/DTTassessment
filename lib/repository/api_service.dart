@@ -23,7 +23,7 @@ class ApiService extends ChangeNotifier {
         final house = House.fromJson(element);
         fetchedHouses.add(house);
         fetchedHouses.sort((a, b) =>
-            a.price!.compareTo(b.price!)); // SORTING LIST BY ITS PRICE
+            a.price!.compareTo(b.price!)); // Sorting list by its price
         notifyListeners();
       });
     } else {

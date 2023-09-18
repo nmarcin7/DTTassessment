@@ -194,7 +194,6 @@ class _OverViewScreenState extends State<OverViewScreen> {
                                             if (context
                                                 .read<WishlistController>()
                                                 .isHouseInWishlist(house)) {
-                                              // Ten domek jest już w ulubionych, wyświetl komunikat
                                               Navigator.pop(context);
 
                                               ScaffoldMessenger.of(context)
@@ -206,12 +205,9 @@ class _OverViewScreenState extends State<OverViewScreen> {
                                                     children: [
                                                       const Icon(
                                                         Icons.error,
-                                                        color: Colors
-                                                            .red, // Kolor ikony błędu
+                                                        color: Colors.red,
                                                       ),
-                                                      SizedBox(
-                                                          width: 8
-                                                              .w), // Odstęp między ikoną a tekstem
+                                                      SizedBox(width: 8.w),
                                                       const Text(
                                                         'This house already exist in the wish list!',
                                                       ),
@@ -219,9 +215,6 @@ class _OverViewScreenState extends State<OverViewScreen> {
                                                   ),
                                                 ),
                                               );
-                                              // context
-                                              //     .read<WishlistController>()
-                                              //     .getData();
                                             } else {
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
@@ -232,12 +225,9 @@ class _OverViewScreenState extends State<OverViewScreen> {
                                                     children: [
                                                       const Icon(
                                                         Icons.check,
-                                                        color: Colors
-                                                            .green, // Kolor ikony błędu
+                                                        color: Colors.green,
                                                       ),
-                                                      SizedBox(
-                                                          width: 8
-                                                              .w), // Odstęp między ikoną a tekstem
+                                                      SizedBox(width: 8.w),
                                                       const Text(
                                                         'The house has been added to the wish list',
                                                       ),
@@ -252,12 +242,6 @@ class _OverViewScreenState extends State<OverViewScreen> {
 
                                               Navigator.pop(context);
                                             }
-
-                                            ///////
-                                            // context
-                                            //     .read<WishlistController>()
-                                            //     .saveHouse(house);
-                                            // Navigator.pop(context);
                                           },
                                           child: Text('YES'),
                                         ),

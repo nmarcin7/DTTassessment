@@ -63,72 +63,37 @@ class _WishlistScreenState extends State<WishlistScreen> {
                   itemCount:
                       context.watch<WishlistController>().wishListHouses.length,
                   itemBuilder: (context, index) {
-                    final houseLat = context
-                        .read<ApiService>()
-                        .fetchedHouses[index]
-                        .latitude;
-                    final houseLon = context
-                        .read<ApiService>()
-                        .fetchedHouses[index]
-                        .longitude;
+                    final house = context
+                        .watch<WishlistController>()
+                        .wishListHouses[index];
+
+                    final houseLat = house.latitude;
+                    final houseLon = house.longitude;
 
                     final distance = context
                         .watch<GeolocatorController>()
                         .calculateDistance(
-                            houseLat!.toDouble(),
-                            houseLon!.toDouble(),
-                            context.read<GeolocatorController>().latitude ?? 0,
-                            context.read<GeolocatorController>().longitude ??
-                                0);
-                    final house = context
-                        .read<WishlistController>()
-                        .wishListHouses[index];
+                          houseLat!.toDouble(),
+                          houseLon!.toDouble(),
+                          context.read<GeolocatorController>().latitude ?? 0,
+                          context.read<GeolocatorController>().longitude ?? 0,
+                        );
                     return InkWell(
                       onTap: () {
                         Navigator.push(
                           context,
                           PageRouteBuilder(
                               pageBuilder: (_, __, ___) => HouseDetail(
-                                    size: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .size,
-                                    description: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .description,
-                                    bathrooms: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .bathrooms,
-                                    bedrooms: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .bedrooms,
-                                    city: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .city,
-                                    zip: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .zip,
-                                    imageUrl: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .image,
-                                    price: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .price,
-                                    latitude: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .latitude,
-                                    longitude: context
-                                        .read<ApiService>()
-                                        .fetchedHouses[index]
-                                        .longitude,
+                                    size: house.size,
+                                    description: house.description,
+                                    bathrooms: house.bathrooms,
+                                    bedrooms: house.bedrooms,
+                                    city: house.city,
+                                    zip: house.zip,
+                                    imageUrl: house.image,
+                                    price: house.price,
+                                    latitude: house.latitude,
+                                    longitude: house.longitude,
                                     location: distance,
                                   ),
                               transitionsBuilder: (_, animation, __, child) {
@@ -185,6 +150,7 @@ class _WishlistScreenState extends State<WishlistScreen> {
                         zip: house.zip,
                         price: house.price,
                         imageUrl: house.image,
+                        distance: distance,
                       ),
                     );
                   },

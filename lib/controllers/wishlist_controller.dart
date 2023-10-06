@@ -55,7 +55,6 @@ class WishlistController extends ChangeNotifier {
         wishListHouses = uniqueHouses;
 
         notifyListeners();
-        print(wishListHouses);
       } else {
         print('${response.statusCode}');
       }
